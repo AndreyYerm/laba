@@ -1,33 +1,74 @@
+.page{
+  border: solid;
+  border-color: goldenrod;
+  border-top: none;
+  border-width: 2px;
+}
 .menu{
-    padding: 15px;
-    background: white;
-    width: 200px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,.1);
-    font-family: Arial, sans-serif;
+  width: 100%;
+  display: block;
+  height: 50px;
+  background: goldenrod;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 50px;
 }
-
-.menu li {margin: 5px 0 0 0px;}
-
-.menu a {
-    text-decoration: none;
-    display: block;  
-    font-size: 13px;
-    color: rgb(255, 255, 255);
-    border: solid;
-    border-color: black;
-    background-color: grey;
-    padding: 5px;
-    position: relative;
-    transition: .1s linear;
-  }
-  
-.menu a:hover {
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-  }
+.menu li{
+  float: left;
+}
+.menu a{
+  color: rgb(255, 255, 255);
+  display: block;
+  height: 50px;
+  padding: 0 30px;
+  text-decoration: none;
+  line-height: 50px;
+}
+.menu a:focus{
+  background: white;
+  color: goldenrod;
+}
+.content{
+  padding: 15px;
+}
+.content p{
+  text-indent: 30px;
+  color: goldenrod;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.content h1{
+  text-align: center;
+  color: rgb(135, 101, 15);
+}
+.content h2{
+  text-align: center;
+  color: rgb(130, 95, 6);
+}
+.content b{
+  color: rgb(182, 138, 29);
+  text-decoration: underline;
+}
+.links{
+  text-align: center
+}
+.links a{
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  text-decoration: none;
+  color: rgb(158, 115, 6);
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.links a:hover{
+  text-decoration: underline;
+  color: black;
+}
